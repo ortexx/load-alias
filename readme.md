@@ -1,4 +1,4 @@
-#Intall 
+#Install 
 `npm install load-alias`
 # About
 Load is a module to require with using aliases and root path. (using node require)
