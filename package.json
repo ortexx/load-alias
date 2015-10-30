@@ -1,0 +1,20 @@
+{
+    "name": "load",
+    "version": "0.0.1",
+    "description": "Module to load files and get paths with aliases",
+     "main": "./load.js",
+    "author": {
+        "name": "Balasyan Alexandr",
+        "email": "mywebstreet@gmail.com"
+    },
+    "keywords": [
+        "load",
+        "require",
+        "alias",
+        "module",
+        "name"
+    ],
+    "license": "MIT",  
+    "dependencies": {
+    }  
+}
