@@ -4,7 +4,7 @@
 Load is a module to require with using aliases and root path. (using node require)
 # Example
 ```js
-var loadAlias = require('load-alias');
+var LoadAlias = require('load-alias');
 
 var loadConfig = {
   public: 'public/',
@@ -16,7 +16,7 @@ var loadConfig = {
   upload: 'upload/'
 }
 
-var load = new loadAlias(loadConfig) // or new loadAlias(rootPath, loadConfig) 
+var load = new LoadAlias(loadConfig) // or new loadAlias(rootPath, loadConfig) 
 
 global.load = load;
 
