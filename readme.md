@@ -1,3 +1,5 @@
+#Intall 
+`npm install load-alias`
 # About
 Load is a module to require with using aliases and root path. (using node require)
 # Example
@@ -69,3 +71,22 @@ or
 ```js
 var path = load.lib('path');
 ```
+
+#Api
+### .setConfig(config)
+Config will be merged with current
+### .getConfig()
+Get current environment config
+### .addAlias(name, path)
+Add new alias
+### .deleteAlias(name)
+Delete alias
+### .getPath(path)
+Get relative path after aliases will be replaced
+### .getFullPath(path)
+Get full path after aliases will be replaced
+### .module(name)
+Get node module
+### .lib(name)
+Get node module
+
