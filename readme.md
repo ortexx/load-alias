@@ -1,20 +1,22 @@
 # About
-Load is a module to require with using aliases and root path.
+Load is a module to require with using aliases and root path. (using node require)
 # Example
 ```js
-var load = require('load');
+var loadAlias = require('load-alias');
 
 var loadConfig = {
-  @public: 'public/',
-  @css: '@public/css/',
-  @img: '@public/img/',
-  @favicon: '@img/favicon.ico',
-  @db: 'db/',
-  @dbModels: '@db/models/',
-  @upload: 'upload/'
+  public: 'public/',
+  css: '@public/css/',
+  img: '@public/img/',
+  favicon: '@img/favicon.ico',
+  db: 'db/',
+  dbModels: '@db/models/',
+  upload: 'upload/'
 }
 
-load.setConfig(loadConfig);
+var load = new loadAlias(loadConfig) // or new loadAlias(rootPath, loadConfig) 
+
+global.load = load;
 
 var modelUser = load('@dbModels/user.js');
 var modelSession = load('@dbModels/session'); // without '.js'
@@ -44,11 +46,11 @@ You can set config for different environment
 ```js
 var loadConfig = {
   default: {
-    @public: 'public/',
-    @temp: 'temp/'
+    public: 'public/',
+    temp: 'temp/'
   },
   production: {
-    @temp: 'other/temp/path'
+    temp: 'other/temp/path'
   }
 }
 ```
