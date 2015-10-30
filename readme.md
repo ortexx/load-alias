@@ -19,8 +19,10 @@ load.setConfig(loadConfig);
 var modelUser = load('@dbModels/user.js');
 var modelSession = load('@dbModels/session'); // without '.js'
 var requireSomething = load('path/to/file'); // as node require
-var imgAvatarPath = load.getPath('@img/avatar.png'); // => 'public/img/avatar.png'
-var imgAvatarFullPath = load.getFullPath('@img/avatar.png'); // => load.rootPath + '/public/img/avatar.png'
+var imgAvatarPath = load.getPath('@img/avatar.png'); 
+  // => 'public/img/avatar.png'
+var imgAvatarFullPath = load.getFullPath('@img/avatar.png'); 
+  // => load.rootPath + '/public/img/avatar.png'
 
 ```
 
