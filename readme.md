@@ -46,7 +46,7 @@ var imgAvatarFullPath = load.getFullPath('@img/avatar.png');
 
 # More
 ## Environment
-You can set config for different environment
+You can set config for different environments
 
 ```js
 var loadConfig = {
@@ -60,7 +60,7 @@ var loadConfig = {
 }
 ```
 
-All properties merge with default
+All properties will be merged with default
 
 ## Node modules
 For loading other node modules use:
