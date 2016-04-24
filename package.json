@@ -1,6 +1,6 @@
 {
     "name": "load-alias",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Module to load files and get paths with aliases",
      "main": "./load-alias.js",
     "author": {
@@ -17,7 +17,7 @@
     "license": "MIT",  
     "repository" : { 
 		"type" : "git",
-		"url" : "https://github.com/ortexx/load"
+		"url" : "https://github.com/ortexx/load-alias"
 	}
 	
 }

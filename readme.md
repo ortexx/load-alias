@@ -13,7 +13,10 @@ var loadConfig = {
   favicon: '@img/favicon.ico',
   db: 'db/',
   dbModels: '@db/models/',
-  upload: 'upload/'
+  upload: 'upload/',
+  test: function(instance, alias, replacement) {
+	return 'something';
+  }	
 }
 
 var load = new LoadAlias(loadConfig) // or new loadAlias(rootPath, loadConfig) 

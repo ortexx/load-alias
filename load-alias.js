@@ -68,15 +68,14 @@ var loadAlias = function(rootPath, config) {
 		function replaceMask() {
 			for (var k in load.getConfig()) {
 				path = path.replace(new RegExp('(^|[\\/\\\\])@(' + k + ')($|[\\/\\\\])'), function () {
-					var alias = load.getConfig()[arguments[2]],
-						replacement = alias,
-						args = [].slice.call(arguments);
+					var alias = load.getConfig()[arguments[2]];
+					var replacement = alias;
 					
 					if(typeof alias == 'function') {
-						replacement = alias.apply({}, [load].concat(args))
+						replacement = alias(load, arguments[2], replacement);
 					}
 					
-					var newPath = arguments[1] + replacement + arguments[3];
+					var newPath = arguments[1] + (replacement || '') + arguments[3];
 
 					if (newPath.match('@')) {
 						isRepeatAlias = true;
