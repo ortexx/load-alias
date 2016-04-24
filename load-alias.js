@@ -45,7 +45,7 @@ var loadAlias = function(rootPath, config) {
 	}
 
 	load.deleteAlias = function (alias) {
-	   delete load.getConfig()[alias];
+	  	delete load.getConfig()[alias];
 	}
 
 	load.getFullPath = function (path) {
