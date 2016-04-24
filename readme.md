@@ -34,7 +34,7 @@ var imgAvatarFullPath = load.getFullPath('@img/avatar.png');
 ```
 
 ## Root path
-* The default `load.rootPath` = `process.env.INIT_CWD`
+* The default `load.rootPath` = `process.env.INIT_CWD || process.cwd()`
 
 * But you can change it: `load.rootPath = something`
 
