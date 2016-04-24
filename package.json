@@ -1,6 +1,6 @@
 {
     "name": "load-alias",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Module to load files and get paths with aliases",
      "main": "./load-alias.js",
     "author": {
