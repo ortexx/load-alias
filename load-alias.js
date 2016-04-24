@@ -7,10 +7,10 @@ var loadAlias = function(rootPath, config) {
 		rootPath = false;
 	}
 	
-	rootPath = rootPath || process !== undefined? process.env.INIT_CWD: '';
+	rootPath = rootPath || (process !== undefined? process.env.INIT_CWD: '');
 
-	var load = function (path, FullPath) {    
-		return require(FullPath === false? load.getPath(path): load.getFullPath(path));
+	var load = function (path, fullPath) {    
+		return require(fullPath === false? load.getPath(path): load.getFullPath(path));
 	}
 
 	load.aliasesConfig = {};
