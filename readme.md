@@ -35,32 +35,32 @@ let something = alias.require('./relative/path/'); // doesn't merge with .rootPa
 The default `alias.rootPath` = `process.cwd()`  
 But you can change it: `alias.rootPath = something`
 
-# Api
-### .load(path)  
+# Api  
+### .load(path)
 Loading file using full path
 
-### .require(path)  
+### .require(path)
 Loading file using relative path.
 
-### .getConfig()  
+### .getConfig() 
 Getting config
 
-### .setConfig(config)  
+### .setConfig(config)
 Config will be merged with current
 
-### .getConfig()  
+### .getConfig()
 Getting config
 
-### .get(name)  
+### .get(name)
 Getting alias
 
-### .set(name, alias)  
+### .set(name, alias)
 Adding or updating alias
 
-### .del(name)  
+### .del(name)
 Deleting alias
 
-### .getPath(path)  
+### .getPath(path)
 Getting transformed path without .rootPath
 
 ### .getFullPath(path)  
