@@ -1,7 +1,7 @@
 # Install 
 `npm install load-alias`
 # About
-Load is a module to require with using aliases and root path. (using node require)
+This module can require files using aliases 
 # Example
 ```js
 let LoadAlias = require('load-alias');

@@ -1,7 +1,7 @@
 {
   "name": "load-alias",
   "version": "1.0.0",
-  "description": "Module to load files and get paths with aliases",
+  "description": "This module can require files using aliases ",
   "main": "./load-alias.js",
   "author": {
     "name": "Balasyan Alexandr",
