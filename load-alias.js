@@ -42,7 +42,6 @@ class LoadAlias {
   transform(link) {
     let isRepeat;
     let config = this.getConfig();
-    let sign = '###';
 
     function replaceFn() {
       let key = arguments[2];
@@ -75,7 +74,6 @@ class LoadAlias {
     }
 
     next();
-    link = link.replace(sign, '@');
 
     return link;
   }
