@@ -1,23 +1,32 @@
 {
-    "name": "load-alias",
-    "version": "0.0.7",
-    "description": "Module to load files and get paths with aliases",
-     "main": "./load-alias.js",
-    "author": {
-        "name": "Balasyan Alexandr",
-        "email": "mywebstreet@gmail.com"
-    },
-    "keywords": [
-        "load",
-        "require",
-        "alias",
-        "module",
-        "name"
-    ],
-    "license": "MIT",  
-    "repository" : { 
-		"type" : "git",
-		"url" : "https://github.com/ortexx/load-alias"
-	}
-	
+  "name": "load-alias",
+  "version": "1.0.0",
+  "description": "Module to load files and get paths with aliases",
+  "main": "./load-alias.js",
+  "author": {
+    "name": "Balasyan Alexandr",
+    "email": "mywebstreet@gmail.com"
+  },
+  "keywords": [
+    "load",
+    "require",
+    "alias",
+    "module",
+    "name"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "chai": "^3.5.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ortexx/load-alias"
+  },
+  "engines": {
+    "node": ">=5.0.0"
+  }
 }
