@@ -42,7 +42,7 @@ Loading file using full path
 ### .require(path)
 Loading file using relative path.
 
-### .getConfig() 
+### .getConfig()
 Getting config
 
 ### .setConfig(config)
@@ -63,7 +63,7 @@ Deleting alias
 ### .getPath(path)
 Getting transformed path without .rootPath
 
-### .getFullPath(path)  
+### .getFullPath(path)
 Getting the full transformed path including .rootPath
 
 
