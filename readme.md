@@ -48,9 +48,6 @@ Getting config
 ### .setConfig(config)
 Config will be merged with current
 
-### .getConfig()
-Getting config
-
 ### .get(name)
 Getting alias
 
