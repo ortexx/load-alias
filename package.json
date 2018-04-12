@@ -1,7 +1,7 @@
 {
   "name": "load-alias",
-  "version": "1.0.2",
-  "description": "This module can require files using aliases ",
+  "version": "1.0.3",
+  "description": "This module requires files via aliases",
   "main": "./load-alias.js",
   "author": {
     "name": "Balasyan Alexandr",

@@ -12,33 +12,43 @@ class LoadAlias {
     this.rootPath = rootPath || process.cwd();
     this.config = config || {};
   }
+
   load(link) {
     return require(this.getFullPath(link));
   }
+
   require(link) {
     return require(this.getPath(link));
   }
+
   getConfig() {
     return this.config;
   }
+
   setConfig(config) {
     return this.config = Object.assign(this.config, config);
   }
+
   get(name) {
     return this.config[name];
   }
+
   set(name, value) {
     this.config[name] = value;
   }
+
   del(name) {
     delete this.config[name];
   }
+
   getPath(link) {
     return this.transform(link);
   }
+
   getFullPath(link) {
     return path.join(this.rootPath, this.transform(link))
   }
+
   transform(link) {
     let isRepeat;
     let config = this.getConfig();
@@ -74,7 +84,6 @@ class LoadAlias {
     }
 
     next();
-
     return link;
   }
 }

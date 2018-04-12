@@ -2,13 +2,13 @@
 `npm install load-alias`
 
 # About  
-This module can require files using aliases  
+This module requires files via aliases  
 
 # Example
 ```js
-let LoadAlias = require('load-alias');
+const LoadAlias = require('load-alias');
 
-let loadConfig = {
+const loadConfig = {
   public: 'public/',
   css: '@public/css/',
   img: '@public/img/',
@@ -21,7 +21,7 @@ let loadConfig = {
   }	
 }
 
-let alias = new LoadAlias(loadConfig); // or new loadAlias(rootPath, loadConfig) 
+const alias = new LoadAlias(loadConfig); // or new loadAlias(rootPath, loadConfig) 
 
 let modelUser = alias.load('@dbModels/user.js');
 let imgAvatarPath = alias.getPath('@img/avatar.png');  // => 'public/img/avatar.png'
