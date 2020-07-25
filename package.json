@@ -1,6 +1,6 @@
 {
   "name": "load-alias",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This module requires files via aliases",
   "main": "./load-alias.js",
   "author": {
