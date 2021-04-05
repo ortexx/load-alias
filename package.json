@@ -1,10 +1,10 @@
 {
   "name": "load-alias",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This module requires files via aliases",
   "main": "./load-alias.js",
   "author": {
-    "name": "Balasyan Alexandr",
+    "name": "Alexander Balasyan",
     "email": "mywebstreet@gmail.com"
   },
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.3.2"
   },
   "license": "MIT",
   "repository": {
