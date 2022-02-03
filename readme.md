@@ -16,7 +16,7 @@ const loadConfig = {
   db: 'db/',
   dbModels: '@db/models/',
   upload: 'upload/',
-  test: function(alias, replacement) {
+  test: function (alias, replacement) {
 	  return 'some/thing';
   }	
 }
@@ -37,25 +37,25 @@ But you can change it: `alias.rootPath = something`
 
 # Api  
 ### .load(path)
-Loading file using full path
+Loading file using a full path
 
 ### .require(path)
-Loading file using relative path.
+Loading file using a relative path.
 
 ### .getConfig()
-Getting config
+Getting the config
 
 ### .setConfig(config)
-Config will be merged with current
+Config will be merged with the current
 
 ### .get(name)
-Getting alias
+Getting the alias
 
 ### .set(name, alias)
-Adding or updating alias
+Adding or updating the alias
 
 ### .del(name)
-Deleting alias
+Deleting the alias
 
 ### .getPath(path)
 Getting transformed path without .rootPath

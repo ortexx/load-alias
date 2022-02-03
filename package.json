@@ -1,6 +1,6 @@
 {
   "name": "load-alias",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "This module requires files via aliases",
   "main": "./load-alias.js",
   "author": {
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^8.3.2"
+    "mocha": "^9.2.0"
   },
   "license": "MIT",
   "repository": {
